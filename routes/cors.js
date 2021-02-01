@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 //this is a list of all the origins(hostnames,port number,protocal) that our server side will entertain
-const WhiteList = ['http://localhost:9000' , 'https://localhost:3443' , 'http://localhost:3000']; 
+const WhiteList = ['http://localhost:9000' , 'https://localhost:3443' , 'http://localhost:3000', 'https://bbcs-frontend.herokuapp.com']; 
 var corOptionsDelegate = (req,callback) =>{
     var corsOption;
     console.log(req.header('Origin'));
