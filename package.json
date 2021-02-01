@@ -1,6 +1,6 @@
 {
   "name": "bbcs",
-  "version": "0.0.0",
+  "version": "14.8.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
