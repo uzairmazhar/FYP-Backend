@@ -9,6 +9,7 @@ var cors = require('cors');
 router.use(bodyParser.json());
 
 /* GET users listing. */
+router.options('*', cors.corsWithOptions, (req, res ) => {res.sendStatus(200);}); //so that a post request is sent from someone
 router.post('/test',cors(), function(req, res, next) {
   console.log(req.body)
   //console.log(req.body.password)
